@@ -3,8 +3,8 @@ A project to practice HTML5 and CSS by recreating a Gameboy interface 🎮.
 
 ## Technologies Used
 - HTML5
-- CSS (Flexbox and CSS Variables)
-- Color Theory
+- CSS (Flexbox)
+- SCSS
 
 ## Future Additions
 - JavaScript for interactivity 🔥
