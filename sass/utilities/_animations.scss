@@ -1,0 +1,13 @@
+@keyframes glowing {
+  0%,
+  100% {
+    box-shadow: 0px 0px 10px 2px rgb(var(--clr-orange-400));
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: 0px 0px 14px 4px rgb(var(--clr-orange-400));
+
+    transform: scale(1.1);
+  }
+}

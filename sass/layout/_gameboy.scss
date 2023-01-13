@@ -1,0 +1,88 @@
+.layout-gameboy {
+  background-color: rgb(var(--clr-blue--400));
+  border: 0.4rem solid rgb(var(--clr-gray--300));
+  border-radius: 2rem 2rem 12rem 2rem;
+  border-radius: 20px;
+  box-shadow: 17px 17px 34px rgba(var(--clr-blue--600), 0.75), -17px -17px 34px rgb(var(--clr-gray--100));
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.6rem;
+  height: 84rem;
+  isolation: isolate;
+  position: relative;
+  width: 51rem;
+
+  &::after {
+    background: linear-gradient(45deg, rgb(var(--clr-blue--600)), rgb(var(--clr-blue--400)));
+    border-bottom-right-radius: 2rem;
+    bottom: 0;
+    clip-path: polygon(100% 30%, 0% 100%, 100% 100%);
+    content: "";
+    height: 15rem;
+    position: absolute;
+    right: 0;
+    width: 19rem;
+    z-index: -1;
+  }
+
+  &__header {
+    align-items: center;
+    border-bottom: 0.3rem solid rgb(var(--clr-blue--600));
+    display: flex;
+    min-width: 100%;
+    padding-inline: 3.6rem;
+
+    &__switch {
+      align-items: center;
+      border-left: 0.3rem solid rgb(var(--clr-blue--600));
+      border-right: 0.3rem solid rgb(var(--clr-blue--600));
+      display: flex;
+      justify-content: flex-start;
+      min-width: 100%;
+      padding: 0.6rem 0 0.6rem 2rem;
+    }
+  }
+
+  &__display {
+    align-items: center;
+    display: flex;
+    min-width: 100%;
+    padding-inline: 3.6rem;
+  }
+
+  &__brand {
+    align-items: center;
+    color: rgb(var(--clr-blue--700));
+    display: flex;
+    font-family: var(--font-default);
+    font-size: 1.6rem;
+    font-weight: 600;
+    justify-content: flex-start;
+    min-width: 100%;
+    padding-inline: 3.6rem;
+  }
+
+  &__controls {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    padding: 2rem 3.6rem;
+  }
+
+  &__options {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+  }
+
+  &__speaker {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    min-width: 100%;
+    padding-right: 3.6rem;
+  }
+}

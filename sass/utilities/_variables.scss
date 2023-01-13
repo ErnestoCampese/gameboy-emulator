@@ -1,0 +1,27 @@
+/* prettier-ignore */
+:root {
+
+  // FONT SCALE: 6.7rem, 5rem, 3.7rem, 2.8rem, 2.1rem, 1.6rem, 1.2rem, 0.75rem ( Pefect Fourth )
+  
+  // SPACE SCALE: 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100... ( Multiple of 8 )
+
+  --font-default: 'Noto Sans', sans-serif;
+  --font-gameboy: 'Press Start 2P', cursive;
+
+  --clr-blue--400: 227, 236, 246;            //#E3ECF6
+  --clr-blue--500: 213, 224, 235;            //#D5E0EB
+  --clr-blue--600: 181, 201, 224;            //#B5C9E0
+  --clr-blue--700: 61, 91, 125;              //#3D5B7D
+  --clr-red--400: 176, 26, 61;               //#B01A3D
+  --clr-red--500:153, 14, 46;                //#990E2E
+  --clr-orange-400: 255, 135, 36;            //#ff8724
+  --clr-gray--100: 255, 255, 255;            //#FFFFFF
+  --clr-gray--300: 252, 252, 253;            //#FCFCFD
+  --clr-gray--500: 63, 73, 84;               //#3F4954
+  --clr-gray--600: 42, 51, 61;               //#2A333D
+
+  --clr-green-300: 0, 181, 129;          //#00b581
+  --clr-green-400: 0, 154, 113;          //#009a71
+  --clr-green-500: 0, 105, 74;           //#00694a
+  --clr-green-600: 0, 79, 59;            //#004f3b
+}

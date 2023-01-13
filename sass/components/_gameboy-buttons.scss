@@ -1,0 +1,23 @@
+.components-gameboy-buttons {
+  align-items: center;
+  background: rgb(var(--clr-blue--400));
+  border-radius: 200rem;
+  border-radius: 200rem;
+  box-shadow: inset 20px 20px 36px rgba(var(--clr-blue--600)), inset -20px -20px 36px rgb(var(--clr-gray--100));
+  display: flex;
+  gap: 2rem;
+  height: 7.2rem;
+  justify-content: space-between;
+  padding: 1.6rem;
+  transform: rotate(-25deg);
+  width: 16rem;
+
+  &__a,
+  &__b {
+    background: linear-gradient(145deg, rgb(var(--clr-red--400)), rgb(var(--clr-red--500)));
+    border-radius: 200rem;
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+  }
+}

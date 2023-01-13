@@ -1,0 +1,24 @@
+.components-gameboy-switch {
+  // To produce soft neumophism shadows we used the following tool:
+
+  // Shadow Generator BG: https://neumorphism.io/
+  // Shadow Generator TEXT: https://www.animatecss.net/web-tool/neumorphism-soft-ui-text-generator.php
+
+  // Local Variables for the Component
+  --bg-color: rgb(var(--clr-blue--400));
+  --bg-dark-shadow: #cad2db;
+  --bg-light-shadow: #fcffff;
+  --text-color: rgb(var(--clr-blue--400));
+  --text-dark-shadow: #aab1b9;
+  --text-light-shadow: #ffffff;
+
+  background: var(--bg-color);
+  border-radius: 200rem;
+  box-shadow: inset 1px 1px 2px var(--bg-dark-shadow), inset -1px -1px 2px var(--bg-light-shadow);
+  color: var(--text-color);
+  font-family: var(--font-default);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.2rem 1.6rem;
+  text-shadow: 1px 1px 4px var(--text-dark-shadow), -1px -1px 4px var(--text-light-shadow);
+}

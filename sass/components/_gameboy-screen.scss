@@ -1,0 +1,10 @@
+.components-gameboy-screen {
+  background-color: rgb(var(--clr-green-300));
+  border: 0.3rem solid rgb(var(--clr-green-600));
+  border-radius: 0.4rem;
+  color: rgb(var(--clr-green-600));
+  display: flex;
+  font-family: var(--font-gameboy);
+  font-size: 0.75rem;
+  width: 30rem;
+}

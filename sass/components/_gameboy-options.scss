@@ -1,0 +1,16 @@
+.components-gameboy-options {
+  align-items: center;
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+  min-height: 10rem;
+
+  &__button {
+    background: linear-gradient(to bottom, rgb(var(--clr-gray--600)), rgb(var(--clr-gray--500)));
+    border-radius: 200rem;
+    cursor: pointer;
+    height: 8rem;
+    transform: rotate(65deg);
+    width: 2rem;
+  }
+}

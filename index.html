@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/af86488232.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script/guess-the-number.js" defer></script>
+    <title>GBEO - Gamboy Emulator Online</title>
+  </head>
+  <body>
+    <div class="layout-main-container">
+      <section class="layout-gameboy">
+        <div class="layout-gameboy__header">
+          <div class="layout-gameboy__header__switch">
+            <div class="components-gameboy-switch">ON/OFF</div>
+          </div>
+        </div>
+        <div class="layout-gameboy__display">
+          <div class="components-gameboy-display">
+            <div class="components-gameboy-display__header">
+              <div class="components-gameboy-display__header__deco"></div>
+              <div class="components-gameboy-display__header__text">DOT MATRIX WITH STEREO SOUND</div>
+              <div class="components-gameboy-display__header__deco"></div>
+            </div>
+            <div class="components-gameboy-display__body">
+              <div class="components-gameboy-batteryLED">
+                <div class="components-gameboy-batteryLED__light"></div>
+                <div class="components-gameboy-batteryLED__text">BATTERY</div>
+              </div>
+              <main class="components-gameboy-screen">
+                <article class="components-games-guess">
+                  <div class="components-games-guess__header">
+                    <div>Score:<span id="current-score">0</span></div>
+                    <div>Highscore:<span id="high-score">0</span></div>
+                  </div>
+                  <div class="components-games-guess__body">
+                    <div class="components-games-guess__body__secret" id="secret-number">?</div>
+                    <div class="components-games-guess__body__output">
+                      <div>Your guess: <span id="user-input">0</span></div>
+                      <i id="user-feedback-icon--default" class="fa-solid fa-ellipsis fa-fw"></i>
+                      <i id="user-feedback-icon--error" class="fa-solid fa-circle-exclamation fa-fw hidden"></i>
+                      <i id="user-feedback-icon--higher" class="fa-solid fa-hand-point-up fa-fw hidden"></i>
+                      <i id="user-feedback-icon--lower" class="fa-solid fa-hand-point-down fa-fw hidden"></i>
+                      <i id="user-feedback-icon--correct" class="fa-solid fa-trophy fa-fw hidden"></i>
+                      <i id="user-feedback-icon--lost" class="fa-solid fa-ghost fa-fw hidden"></i>
+                      <p id="user-feedback-text"></p>
+                    </div>
+                  </div>
+                  <footer class="components-games-guess__footer">
+                    <p id="user-guide"></p>
+                  </footer>
+                </article>
+              </main>
+            </div>
+          </div>
+        </div>
+        <div class="layout-gameboy__brand">
+          <span>GBEO - Gamboy Emulator Online</span>
+        </div>
+        <div class="layout-gameboy__controls">
+          <div class="components-gameboy-dpad">
+            <div class="components-gameboy-dpad__vertical">
+              <button id="button-up" class="components-gameboy-dpad__button"></button>
+              <button id="button-down" class="components-gameboy-dpad__button"></button>
+            </div>
+            <div class="components-gameboy-dpad__horizontal">
+              <button class="components-gameboy-dpad__button"></button>
+              <button class="components-gameboy-dpad__button"></button>
+            </div>
+            <div class="components-gameboy-dpad__center"></div>
+            <div class="components-gameboy-dpad__filler"></div>
+          </div>
+          <div class="components-gameboy-buttons">
+            <button id="button-b" class="components-gameboy-buttons__b"></button>
+            <button id="button-a" class="components-gameboy-buttons__a"></button>
+          </div>
+        </div>
+        <div class="layout-gameboy__options">
+          <div class="components-gameboy-options">
+            <button id="button-reset" class="components-gameboy-options__button"></button>
+            <div class="components-gameboy-options__button"></div>
+          </div>
+        </div>
+        <div class="layout-gameboy__speaker">
+          <div class="components-gameboy-speaker">
+            <div class="components-gameboy-speaker__line"></div>
+            <div class="components-gameboy-speaker__line"></div>
+            <div class="components-gameboy-speaker__line"></div>
+            <div class="components-gameboy-speaker__line"></div>
+            <div class="components-gameboy-speaker__line"></div>
+            <div class="components-gameboy-speaker__line"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

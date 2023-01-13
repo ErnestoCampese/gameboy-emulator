@@ -1,0 +1,75 @@
+.components-gameboy-dpad {
+  height: 14rem;
+  isolation: isolate;
+  position: relative;
+  width: 14rem;
+
+  &__vertical,
+  &__horizontal {
+    align-items: center;
+    background-color: rgb(var(--clr-gray--600));
+    border: 0.3rem solid rgba(var(--clr-gray--500), 0.8);
+    border-radius: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+  }
+
+  &__horizontal {
+    height: 40%;
+    width: 100%;
+  }
+
+  &__vertical {
+    flex-flow: column;
+    height: 100%;
+    width: 40%;
+  }
+
+  &__filler {
+    background-color: rgb(var(--clr-gray--600));
+    height: 40%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    z-index: -1;
+  }
+
+  &__center {
+    // To produce soft neumophism shadows we used the following tool:
+
+    // Shadow Generator BG: https://neumorphism.io/
+
+    // Local Variables for the Component
+    --bg-color: rgb(var(--clr-gray--600));
+    --bg-dark-shadow: #232b33;
+    --bg-light-shadow: #313b47;
+
+    background-color: var(--bg-color);
+    border-radius: 200rem;
+    border-radius: 150px;
+    box-shadow: inset 5px 5px 9px var(--bg-dark-shadow), inset -5px -5px 9px var(--bg-light-shadow);
+    height: 4.8rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4.8rem;
+    z-index: 1;
+  }
+
+  &__button {
+    background-color: transparent;
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    z-index: 10;
+  }
+}

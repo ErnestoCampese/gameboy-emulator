@@ -1,0 +1,15 @@
+.components-gameboy-speaker {
+  align-items: center;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  transform: rotate(-25deg) translateY(-3.6rem);
+
+  &__line {
+    background: linear-gradient(145deg, #b5c9e0, #b5c9e0);
+    border-radius: 200rem;
+    box-shadow: 3px 3px 6px #c1c9d1, -3px -3px 6px #ffffff;
+    height: 8rem;
+    width: 1rem;
+  }
+}
