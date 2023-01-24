@@ -5,6 +5,7 @@ A project to practice HTML5 and CSS by recreating a Gameboy interface 🎮.
 - HTML5
 - CSS (Flexbox)
 - SCSS
+- JavaScript
 
 ## Future Additions
 - JavaScript for interactivity 🔥
